@@ -1,7 +1,10 @@
 <?php
 
     include 'koneksi.php';
-
+    session_start();
+    if (!isset($_SESSION['username'])){
+        header("Location: login.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a href="formdata.php" class="btn btn-primary btn-sm"><span class="fa fa-plus"></span> Tambah Data</a>
+                        <a href="action-logout.php" class="btn btn-danger btn-sm"><span class="fa fa-plus"></span> Logout</a>
                     </div>
 
                     <!-- /.panel-heading -->
