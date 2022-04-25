@@ -49,7 +49,7 @@ function make_slides($connect)
    $output .= '<div class="item">';
   }
   $output .= '
-   <img src="admin/images/'.$row["gambar"].'" alt="'.$row["judul"].'" width="100%" height="100%" />
+   <img src="admin/images/'.$row["gambar"].'" alt="'.$row["judul"].'" width="100%" height="auto" class="img-fluid"/>
    <div class="carousel-caption">
     <h3>'.$row["judul"].'</h3>
    </div>
